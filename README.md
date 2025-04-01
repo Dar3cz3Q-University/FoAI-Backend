@@ -26,4 +26,4 @@
 
 ## Report
 
-[View the report](https://github.com/Dar3cz3Q-University/FoAI-Model/blob/master/docs/Report.md)
+[View the report](https://dar3cz3q-university.github.io/FoAI-Model/)
