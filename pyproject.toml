@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "foai-backend"
+version = "0.1.0"
+description = ""
+authors = ["Dariusz Homa <dariuszhoma7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+prod = "scripts.entrypoint.prod"
+dev = "scripts.entrypoint:dev"
+lint = "scripts.scripts:lint"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.0"
+python-dotenv = "^1.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
