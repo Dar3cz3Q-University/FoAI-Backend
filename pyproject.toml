@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "foai-backend"
-version = "0.1.0"
+version = "1.0.0"
 description = ""
 authors = ["Dariusz Homa <dariuszhoma7@gmail.com>"]
 readme = "README.md"
