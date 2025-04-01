@@ -6,7 +6,7 @@ authors = ["Dariusz Homa <dariuszhoma7@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-prod = "scripts.entrypoint.prod"
+prod = "scripts.entrypoint:prod"
 dev = "scripts.entrypoint:dev"
 lint = "scripts.scripts:lint"
 
