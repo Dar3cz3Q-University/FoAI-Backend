@@ -1,5 +1,5 @@
-from fastapi import HTTPException, APIRouter, UploadFile, File
 from typing import List
+from fastapi import HTTPException, APIRouter, UploadFile, File
 from foai_model.preprocessing import clean_resume
 from foai_model.predict import predict
 from foai_backend.utils import extract_text_from_pdf
@@ -18,8 +18,8 @@ async def predict_endpoint(files: List[UploadFile] = File(...)):
             )
         content = await extract_text_from_pdf(file)
 
-        cleanedContent = clean_resume(content)
-        result = predict(cleanedContent)
+        cleaned_content = clean_resume(content)
+        result = predict(cleaned_content)
 
         results.append(
             {

@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from fastapi_health import health
 
-from foai_model.predict import predict
 from foai_backend.routes.predict import predict
 
 app = FastAPI()
