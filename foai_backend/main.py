@@ -1,7 +1,15 @@
 from fastapi import FastAPI
+from fastapi_health import health
+
+from foai_model.predict import predict
+from foai_backend.routes.predict import predict
 
 app = FastAPI()
 
-@app.get("/")
-def root():
-    return {"message": "Hello from FastAPI with Poetry!"}
+
+def always_ok():
+    return True
+
+
+app.include_router(predict.router)
+app.add_api_route("/health", health([always_ok]))
